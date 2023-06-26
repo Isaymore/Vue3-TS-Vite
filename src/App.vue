@@ -7,22 +7,24 @@
 // import watch from './components/watch.vue';
 // import WatchEffect from './components/WatchEffect.vue';
 // import LifeCycle from './components/LifeCycle.vue'
-import Menu from './components/Menu/index.vue'
-import Header from './components/Header/index.vue'
-import Content from './components/Content/index.vue'
-const getSeasonList = (val: string[]) => {
-  console.log('val', val, typeof val)
-}
+// import Menu from './components/Menu/index.vue'
+// import Header from './components/Header/index.vue'
+// import Content from './components/Content/index.vue'
+// const getSeasonList = (val: string[]) => {
+//   console.log('val', val, typeof val)
+// }
+// import Card from './components/common/Card/index.vue'
 </script>
 
-<template>
-  <div class="layout">
+<!-- <template> -->
+  <!-- <Card title="主业" subtitle="副业" content="up主"></Card> -->
+<!-- <div class="layout">
   <div class="layout-right">
     <Menu msg="爱好" :hobby-list="['学习', '吃饭', '睡觉']" @on-click="getSeasonList"></Menu>
     <Header></Header>
     <Content></Content>
-  </div>
-  </div>
+    </div>
+    </div> -->
   <!-- <LifeCycle/> -->
   <!-- <WatchEffect/> -->
   <!-- <watch/> -->
@@ -31,15 +33,15 @@ const getSeasonList = (val: string[]) => {
   <!-- <ReactiveBucket/> -->
   <!-- <Event/> -->
   <!-- <div>
-            <a href="https://vitejs.dev" target="_blank">
-              <img src="/vite.svg" class="logo" alt="Vite logo" />
-            </a>
-            <a href="https://vuejs.org/" target="_blank">
-              <img src="./assets/vue.svg" class="logo vue" alt="Vue logo" />
-            </a>
-          </div>
-          <HelloWorld msg="Vite + Vue" /> -->
-</template>
+              <a href="https://vitejs.dev" target="_blank">
+                <img src="/vite.svg" class="logo" alt="Vite logo" />
+              </a>
+              <a href="https://vuejs.org/" target="_blank">
+                <img src="./assets/vue.svg" class="logo vue" alt="Vue logo" />
+              </a>
+            </div>
+            <HelloWorld msg="Vite + Vue" /> -->
+<!-- </template> -->
 
 <style scoped>
 .logo {
