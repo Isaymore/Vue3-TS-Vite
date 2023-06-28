@@ -14,17 +14,52 @@
 //   console.log('val', val, typeof val)
 // }
 // import Card from './components/common/Card/index.vue'
+// import Tree from './components/Tree.vue';
+// import { reactive } from 'vue'
+// type TreeNode = {
+//   name: string,
+//   children?: TreeNode[] | []
+// };
+// const data = reactive<TreeNode[]>([
+//   {
+//     name: "no.1",
+//     children: [
+//       {
+//         name: "no.1-1",
+//         children: [
+//           {
+//             name: "no.1-1-1",
+//           },
+//         ],
+//       },
+//     ],
+//   },
+//   {
+//     name: "no.2",
+//     children: [
+//       {
+//         name: "no.2-1",
+//       },
+//     ],
+//   },
+//   {
+//     name: "no.3",
+//   },
+// ]);
+import DynamicComponent from './components/DynamicComponent/index.vue'
 </script>
 
-<!-- <template> -->
+<template>
+  <DynamicComponent/>
+  <!-- <Tree :data="data"></Tree> -->
   <!-- <Card title="主业" subtitle="副业" content="up主"></Card> -->
-<!-- <div class="layout">
-  <div class="layout-right">
-    <Menu msg="爱好" :hobby-list="['学习', '吃饭', '睡觉']" @on-click="getSeasonList"></Menu>
-    <Header></Header>
-    <Content></Content>
-    </div>
-    </div> -->
+  <!-- <div class="layout">
+          <div class="layout-right">
+            <Menu msg="爱好" :hobby-list="['学习', '吃饭', '睡觉']" @on-click="getSeasonList"></Menu>
+            <Header></Header>
+            <Content></Content>
+            </div>
+            </div> -->
   <!-- <LifeCycle/> -->
   <!-- <WatchEffect/> -->
   <!-- <watch/> -->
@@ -33,15 +68,15 @@
   <!-- <ReactiveBucket/> -->
   <!-- <Event/> -->
   <!-- <div>
-              <a href="https://vitejs.dev" target="_blank">
-                <img src="/vite.svg" class="logo" alt="Vite logo" />
-              </a>
-              <a href="https://vuejs.org/" target="_blank">
-                <img src="./assets/vue.svg" class="logo vue" alt="Vue logo" />
-              </a>
-            </div>
-            <HelloWorld msg="Vite + Vue" /> -->
-<!-- </template> -->
+                      <a href="https://vitejs.dev" target="_blank">
+                        <img src="/vite.svg" class="logo" alt="Vite logo" />
+                      </a>
+                      <a href="https://vuejs.org/" target="_blank">
+                        <img src="./assets/vue.svg" class="logo vue" alt="Vue logo" />
+                      </a>
+                    </div>
+                    <HelloWorld msg="Vite + Vue" /> -->
+</template>
 
 <style scoped>
 .logo {
