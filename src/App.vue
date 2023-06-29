@@ -46,11 +46,13 @@
 //     name: "no.3",
 //   },
 // ]);
-import DynamicComponent from './components/DynamicComponent/index.vue'
+// import DynamicComponent from './components/DynamicComponent/index.vue'
+import Slot from './components/Slot/index.vue'
 </script>
 
 <template>
-  <DynamicComponent/>
+  <Slot/>
+  <!-- <DynamicComponent/> -->
   <!-- <Tree :data="data"></Tree> -->
   <!-- <Card title="主业" subtitle="副业" content="up主"></Card> -->
   <!-- <div class="layout">
