@@ -36,7 +36,7 @@
                 {{ defaultProps }}
             </template>
             <template #footer="footerProps">
-                {{ footerProps }}
+                {{ footerProps }} 
             </template>
         </MyComponent>
     </div>
