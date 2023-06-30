@@ -24,6 +24,7 @@ const change1 = () => {
   console.log('星爷-change1-test', test, typeof test);
 }
 obj.foo++
+console.log('星爷-test', test, typeof test);
 console.log('星爷-test.value', test.value, typeof test.value);
 
 const state = reactive<Obj>({
@@ -43,6 +44,7 @@ const change2 = () => {
 }
 // 更改源属性也会更新该 ref
 state.foo++
+console.log('星爷-fooRef', fooRef, typeof fooRef);
 console.log('星爷-fooRef.value', fooRef.value, typeof fooRef.value);
 
 const state1 = reactive<Obj>({

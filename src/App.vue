@@ -47,11 +47,17 @@
 //   },
 // ]);
 // import DynamicComponent from './components/DynamicComponent/index.vue'
-import Slot from './components/Slot/index.vue'
+// import Slot from './components/Slot/index.vue'
+// import MouseTracker from './components/MouseTracker.vue'
+import TeleportVue from './components/Teleport/index.vue'
 </script>
 
 <template>
-  <Slot/>
+  <TeleportVue/>
+  <!-- <MouseTracker v-slot="{ x, y }">
+  	Mouse is at: {{ x }}, {{ y }}
+	</MouseTracker> -->
+  <!-- <Slot/> -->
   <!-- <DynamicComponent/> -->
   <!-- <Tree :data="data"></Tree> -->
   <!-- <Card title="主业" subtitle="副业" content="up主"></Card> -->

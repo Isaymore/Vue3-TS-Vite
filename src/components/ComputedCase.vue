@@ -46,7 +46,7 @@ interface Data {
     price: number,
     num: number
 }
-const data = reactive<Data[]>([
+const data = ref<Data[]>([
     {
         name: "小满的绿帽子",
         price: 100,
@@ -65,11 +65,12 @@ const data = reactive<Data[]>([
 ])
 
 const searchData = computed<Data[]>(() => {
-    return data.filter(item => item.name.includes(keyWord.value))
+    return data.value.filter(item => item.name.includes(keyWord.value))
 })
 
 const total = computed(() => {
-    return data.filter(item => item.name.includes(keyWord.value)).reduce((prev: number, next: Data) => {
+    // return data.filter(item => item.name.includes(keyWord.value)).reduce((prev: number, next: Data) => {
+    return searchData.value.reduce((prev: number, next: Data) => {
         return prev + next.num * next.price
     }, 0)
 })
